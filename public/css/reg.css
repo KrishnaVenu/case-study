@@ -1,0 +1,49 @@
+#navbar .btn {
+  border:0px solid transparent;
+}
+#navbar .btn-default.focus, #navbar .btn-default:focus {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+#navbar li.nav-item a {
+  font-weight:700;
+  color:#333;
+}
+#navbar li.nav-item a:hover {
+  color:#fff;
+}
+.navbar-brand{
+  font-family: cursive;
+  letter-spacing: 2px;
+}
+
+body{
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(228, 84, 127) 0%, rgb(13, 91, 107) 96%);;
+}
+
+h1{
+  padding: 26px;
+        border: 2px   ;
+        margin: 10px;
+        letter-spacing: 5px;
+        text-align: center;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 50px;
+        color: white;
+        text-shadow: 1px 1px 2px rgb(21, 24, 23), 0 0 25px rgb(240, 57, 194), 0 0 5px rgb(253, 86, 197);
+}
+
+.registration{
+  max-width: 400px;
+color: thistle;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+     left: 0; 
+    margin: 0 auto ;
+    text-align: center;
+    width: 100% ;
+    color: white;
+  }

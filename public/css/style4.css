@@ -1,0 +1,47 @@
+#navbar .btn {
+  border:0px solid transparent;
+}
+#navbar .btn-default.focus, #navbar .btn-default:focus {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+#navbar li.nav-item a {
+  font-weight:700;
+  color:#333;
+}
+#navbar li.nav-item a:hover {
+  color:#fff;
+}
+.navbar-brand{
+  font-family: cursive;
+  letter-spacing: 2px;
+}
+
+.mybox{
+  background-color: rgb(5, 31, 31);
+  padding: 20px;
+  margin: 5px;
+}
+
+h1{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 50px;
+  color: blueviolet;
+}
+
+
+p{
+  font-family: cursive;
+  font-size: 30px;
+  color: rgb(201, 25, 134);
+}
+
+.footer {
+    position: relative;
+    bottom: 0; 
+    left: 0; 
+    margin: 0 auto ;
+    text-align: center;
+    width: 100% ;
+    color: white;
+  }

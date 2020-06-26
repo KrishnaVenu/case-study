@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <link rel="icon" href="/images/icon.png" type="image/gif" sizes="32*32">
+   <link rel="stylesheet" href="/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav class="navbar navbar-light bg-dark navbar-dark">
+                        <a class="navbar-brand" href="">
+                       <img src="/images/icon.png" width="30" height="30"class="d-inline-block align-top"alt="">LIBRARY MANAGEMENT</a>
+    </nav>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span></button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="container">
+                  <nav class="navbar navbar-light bg-dark navbar-dark">   
+                  <ul class="navbar-nav ml-lg-auto">
+                    <%for(i=0;i<nav.length;i++){%>
+                <li class="nav-item  inline px-3  pr-5">
+                  <a class="nav-link" href="<%=nav[i].link%>"><button class="btn btn-primary"><%=nav[i].name%></button></a>
+              </li>
+             <%}%>
+                </ul>
+                    </nav>
+                    </div>
+                  </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+      <div id="navbar" class="container-fluid">
+        <div class="container nav-fill w-100">
+          
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+              <ul class="navbar-nav nav-fill w-100">
+                <li class="nav-item">
+                  <a class="nav-link active" href="/" role="button" class="btn btn-default">LIBRARY</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+      </div>
+    </nav>
+    
+        <div id="login">
+        <div class="container">
+          <div id="login-row" class="row justify-content-center align-items-center">
+              <div id="login-column" class="col-md-6">
+                  <div class="login-box col-md-12">
+                      <form id="login-form" class="form" action="/home" onsubmit="return validate()">`
+                          <h3 class="text-center text-info">Login</h3>
+                          <div class="form-group">
+                              <label for="username" class="text-info">Email :</label><br>
+                              <input type="text" name="username" id="email" class="form-control" required>
+                              <label for="error"id="error1"></label>
+                            
+                          </div>
+                          <div class="form-group">
+                              <label for="password" class="text-info">Password :</label><br>
+                              <input type="password" name="password" id="pwd" class="form-control" required>
+                              <label for="error"id="error2"></label>
+                          </div>
+                          <div class="form-group">
+                              <label for="remember-me" class="text-info"><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
+                              <div class="wrapper"><input type="submit"id="myBtn" name="submit" class=" btn btn-info btn-md " value="submit">
+                            
+                          </div></div>
+                          <div id="register-link" class="text-right">
+                              <a href="/registration" class="text-info">Register here</a>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="container-fluid"> <br><br><br>
+    <div class="footer" style="background-color:rgb(8, 4, 70); padding-top:7px; padding-bottom:6px;">
+      <i class="fa fa-3x fa-instagram" href="https://www.instagram.com/msroholahi/";></i>
+      <i class="fa fa-3x fa-twitter" href="https://twitter.com/MSRoholahi";></i>
+      <i class="fa fa-3x fa-linkedin " href="https://www.linkedin.com/company/esperlos";></i>
+    <i class="fa fa-3x fa-github" style="font-size:px" href="https://github.com";> </i> 
+    <i class="fa fa-3x fa-wordpress" style="font-size:px" href="http://wordpress.org";> </i>
+    <i class="fa fa-3x fa-telegram" style="font-size:px" href="https://telegram.me/MSR72";> </i>
+      <h6 style="font-size: 15px";>Case Study-Library App© 2020<a href="http://programmerscamp.ir"></a></h6>
+   </div>
+   </div>
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>       
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/script1.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <link rel="icon" href="/images/icon.png" type="image/gif" sizes="60*60">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/addbook.css">
+</head>
+<body style="background-image: url(https://www.freewallpapers4u.in/wp-content/uploads/2020/03/itl.cat_nature-wallpaper-hd_3450.jpg);">
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav class="navbar navbar-light bg-dark navbar-dark">
+            <a class="navbar-brand" href="">
+            <img src="/images/icon.png" width="40" height="40"class="d-inline-block align-top"alt="">LIBRARY MANAGEMENT</a>
+    </nav>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+      <div id="navbar" class="container-fluid">
+        <div class="container nav-fill w-100">
+      
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+              <ul class="navbar-nav nav-fill w-100">
+                <li class="nav-item">
+                  <a class="nav-link active" href="/home" role="button" class="btn btn-default">Home</a>
+              </li>
+                <%for(i=0;i<nav2.length;i++){%>
+                 
+                 <li class="nav-item">
+                    <a class="nav-link" href="<%=nav2[i].link%>" role="button" class="btn btn-default"><%=nav2[i].name%></a>
+                 </li>
+                <%}%>    
+           </ul>
+         </div>
+      </div>
+  </div>
+  </nav> 
+  <div class="rsvp-section" id="rsvp">
+     <div class="container">
+      <div class="row pt-5 pb-5">
+        <div class="col-md-12 text-center pt-5 pb-5">
+          <h2 class="headingbig display-3 pt-3 text-white">ADD AUTHOR</h2>
+        </div>
+        <div class="col-md-12 text-white p-5 bg-black">
+          <form method="GET"action="/admin/add">
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label>Title</label>
+                <input type="text" class="form-control" id="inputName" placeholder="title"name="title">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Description</label>
+              <textarea type="text" class="form-control " id="inputmessage" placeholder="Description"name="description"></textarea>
+          </div>
+            Image:<input type="file"name="image">
+            <div class="form-group text-center">
+              <button type="submit" class="btn btn-primary" >Add</button>
+              
+            </div>
+          </form>
+        </div>
+     </div> 
+    </div>
+    </div>
+  
+<div class="container-fluid"> <br><br><br>
+  <div class="footer" style="background-color:rgb(8, 4, 70); padding-top:7px; padding-bottom:6px;">
+    <i class="fa fa-3x fa-instagram" href="https://www.instagram.com/msroholahi/";></i>
+    <i class="fa fa-3x fa-twitter" href="https://twitter.com/MSRoholahi";></i>
+    <i class="fa fa-3x fa-linkedin " href="https://www.linkedin.com/company/esperlos";></i>
+  <i class="fa fa-3x fa-github" style="font-size:px" href="https://github.com";> </i> 
+  <i class="fa fa-3x fa-wordpress" style="font-size:px" href="http://wordpress.org";> </i>
+  <i class="fa fa-3x fa-telegram" style="font-size:px" href="https://telegram.me/MSR72";> </i>
+    <h6 style="font-size: 15px";>Case Study-Library App© 2020<a href="http://programmerscamp.ir"></a></h6>
+</div>
+ </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>       
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>   
