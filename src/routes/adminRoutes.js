@@ -8,11 +8,11 @@ function router(nav2){
             title:"V.K.Library-Add Book"
         })
     })
-    adminRouter.get('/add',function(req,res){
+    adminRouter.post('/add',function(req,res){
         var item = {
-          title:  req.query.title,
-    description: req.query.description,
-          image:  req.query.image
+          title:  req.body.title,
+    description: req.body.description,
+          image:  req.body.image
         }
       var book = Bookdata(item);
       book.save();
