@@ -47,13 +47,13 @@
         <div class="card mb-12" style="max-width: 100%;">
          <div class="row no-gutters">
         <div class="col-md-3">
-        <img src="/images/<%=books[i].img%>" class="card-img rounded-circle"width="600%"height="100%" alt="...">
+        <img src="/images/<%=books[i].image%>" class="card-img rounded-circle"width="600%"height="100%" alt="...">
     </div>
         <div class="col-md-8">
         <div class="card-body">
         <h5 class="card-title"><%=books[i].title%></h5>
         <p class="card-text"><%=books[i].description%></p>
-        <a href="/books/<%=i%>" class="btn btn-primary">Read More</a>
+        <a href="/books/<%=books[i]._id%>" class="btn btn-primary">Read More</a>
       </div>
     </div>
   </div>
