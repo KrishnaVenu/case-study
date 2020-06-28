@@ -52,13 +52,13 @@
         <div class="card mb-12" style="max-width: 100%;">
          <div class="row no-gutters">
         <div class="col-md-3">
-        <img src="/images/<%=authors[i].img%>" class="card-img rounded-circle"width="600%"height="100%" alt="...">
+        <img src="/images/<%=authors[i].image%>" class="card-img rounded-circle"width="600%"height="100%" alt="...">
     </div>
         <div class="col-md-8">
         <div class="card-body">
         <h5 class="card-title"><%=authors[i].title%></h5>
         <p class="card-text"><%=authors[i].description%></p>
-        <a href="/authors/<%=i%>" class="btn btn-primary">Read More</a>
+        <a href="/authors/<%=authors[i]._id%>" class="btn btn-primary">Read More</a>
       </div>
     </div>
   </div>
