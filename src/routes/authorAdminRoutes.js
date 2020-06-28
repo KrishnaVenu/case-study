@@ -8,13 +8,13 @@ function router(nav2){
             title:"V.K.Library-Add Author"
         })
     })
-    authorAdminRouter.get('/add',function(req,res){
+    authorAdminRouter.post('/addAuthor',function(req,res){
         var item = {
-          title:  req.query.title,
-    description: req.query.description,
-          image:  req.query.image
+          title:  req.body.title,
+    description: req.body.description,
+          image:  req.body.image
         }
-      var book = Authordata(item);
+      var author = Authordata(item);
       author.save();
       res.redirect('/authors'); 
     });
