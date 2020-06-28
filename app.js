@@ -27,6 +27,7 @@ const authorsRouter = require("./src/routes/authorRoutes")(nav2);
 const booksRouter = require("./src/routes/bookRoutes")(nav2);
 const adminRouter = require("./src/routes/adminRoutes")(nav2);
 const authorAdminRouter = require("./src/routes/authorAdminRoutes")(nav2);
+app.use(express.urlencoded({extended:true}));
 app.use(express.static('./public'));
 app.set("view engine","ejs");
 app.set("views","./src/views");
