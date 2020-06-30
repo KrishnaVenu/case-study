@@ -28,7 +28,6 @@ const booksRouter = require("./src/routes/bookRoutes")(nav2);
 const adminRouter = require("./src/routes/adminRoutes")(nav2);
 const authorAdminRouter = require("./src/routes/authorAdminRoutes")(nav2);
 const registrationAdminRouter = require("./src/routes/registrationAdminRoutes")(nav);
-const loginAdminRouter = require("./src/routes/loginAdminRoutes")(nav);
 app.use(express.urlencoded({extended:true}));
 app.use(express.static('./public'));
 app.set("view engine","ejs");
@@ -39,7 +38,6 @@ app.use('/books',booksRouter);
 app.use('/admin',adminRouter);
 app.use('/admin2',authorAdminRouter);
 app.use('/admin3',registrationAdminRouter);
-app.use('/admin4',loginAdminRouter);
 app.get('/',function(req,res){
     res.render("index",
     {
