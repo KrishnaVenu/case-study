@@ -2,12 +2,6 @@ const express = require('express');
 const registrationAdminRouter = express.Router();
 const Registrationdata = require('../model/Registrationdata');
 function router(nav){
-   // registrationAdminRouter.get('/',function(req,res){
-        // res.render("addRegistration",{
-        //     nav,
-        //     title:"V.K.Library-Add Author"
-      //  })
-   // })
     registrationAdminRouter.post('/addSignUp',function(req,res){
         var item = {
           Email:  req.body.Email,
