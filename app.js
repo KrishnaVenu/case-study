@@ -1,4 +1,6 @@
 const express =require('express');
+const Registrationdata = require('./src/model/Registrationdata');
+const Logindata = require('./src/model/Logindata');
 const app = express();
 const nav = [
     {
@@ -48,17 +50,39 @@ app.get('/',function(req,res){
 app.get('/login',function(req,res){
     res.render("login",
     {
-        nav,
-        title:'V.K.Library -Login'
-    });
+    nav,
+    title:'V.K.Library-Login'
+     });
+});
+app.get('/login/set',function(req,res){
+    const email = req.params.email;
+    const pwd = req.params.pwd;
+    Logindata.findOne({Email:email,Password:pwd})
+    .then(function(err,doc){
+       
+        if(doc==null){
+            res.render("home",
+            {
+                nav2,
+                title:'V.K.Library'
+                
+            });
+        }
+        else{
+            res.render("login",
+            {
+                nav,
+                title:'V.K.Library-Login'
+            });
+        }
+})
 });
 app.get('/registration',function(req,res){
     res.render("registration",
-    {
-        nav,
-        title:'V.K.Library-Registration'
+        {
+            nav,
+            title:'V.K.Library-Registration'
+        });
     });
-});
-
 
 app.listen(3222);
