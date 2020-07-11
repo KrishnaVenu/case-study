@@ -22,15 +22,10 @@ updateBookRouter.get('/:id',function(req,res){
 description: req.body.description,
       image:  req.body.image
 }
-    // var book = Bookdata(item);
+     //var book = Bookdata(item);
             Bookdata.findByIdAndUpdate(id,item,function(err,result){
                if(result){
-                  // res.render('book'),
-                  // {
-                  //    nav2,
-                  //    title:"V.K.Library-Books"
-                  // }
-                  res.redirect("books[i]");
+                  res.redirect("/books");
                }
      })
                
