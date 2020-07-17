@@ -14,7 +14,7 @@ function router(nav2){
     description: req.body.description,
           image:  req.body.image
         }
-      var book = Bookdata(item);
+         var book = Bookdata(item);
       book.save();
       res.redirect('/books'); 
     });
