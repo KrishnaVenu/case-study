@@ -56,8 +56,8 @@
         <div class="card-body">
         <h5 class="card-title"><%=author.title%></h5>
         <p class="card-text"><%=author.description%></p>
-        <button type="submit" class="btn btn-primary">Update</button>
-        <button type="submit" class="btn btn-primary">Delete</button> 
+        <a href="/updateAuthor/<%=author._id%>" class="btn btn-primary">Update</a>
+        <a href="/updateAuthor/deleteAuthor/<%=author._id%>" class="btn btn-primary">Delete</a> 
       </div>
     </div>
   </div>
