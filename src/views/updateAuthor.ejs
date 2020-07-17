@@ -6,9 +6,9 @@
     <title><%=title%></title>
     <link rel="icon" href="/images/icon.png" type="image/gif" sizes="60*60">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/addbook.css">
+    <link rel="stylesheet" href="/css/updateauthor.css">
 </head>
-<body style="background-image: url(https://previews.123rf.com/images/assumption111/assumption1111710/assumption111171000390/89432574-hands-holding-blank-business-card-with-text-update-on-black-background.jpg);">
+<body>
   <nav class="navbar navbar-expand-lg navbar-light bg-dark">
     <nav class="navbar navbar-light bg-dark navbar-dark">
             <a class="navbar-brand" href="">
@@ -44,10 +44,10 @@
           <h2 class="headingbig display-3 pt-3 text-white">AUTHORS UPDATION</h2>
         </div>
         <div class="col-md-12 text-white p-5 bg-black">
-          <form method="POST"action="/authors/<%=authors[i]._id%>">
+          <form method="POST"action="/updateAuthor/post2">
             <div class="form-row">
               <div class="form-group">
-                <input type="hidden"name="<%_id%>">
+                <input type="hidden"name="_id"value="<%=author._id%>">
               </div>
             </div>
             <div class="form-group">
