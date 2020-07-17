@@ -1,6 +1,6 @@
 const express = require('express');
-const updateBookRouter = express.Router();
 const Bookdata = require('../model/Bookdata');
+const updateBookRouter = express.Router();
 function router(nav2){
 updateBookRouter.get('/:id',function(req,res){
    const id =req.params.id;
@@ -26,10 +26,20 @@ description: req.body.description,
             Bookdata.findByIdAndUpdate(id,item,function(err,result){
                if(result){
                   res.redirect("/books");
-               }
+                 }
      })
                
   });
+  updateBookRouter.get('/deleteBook/:id',(req,res)=>{
+     var id =req.params.id;
+    // console.log(req.params);
+     Bookdata.findByIdAndDelete(id,(err,result)=>{
+        if(result){
+           res.redirect("/books");
+        }
+     })
+  });
+
             return updateBookRouter;
 }
         module.exports = router;
