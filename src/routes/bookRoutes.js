@@ -7,7 +7,7 @@ function router(nav2){
                  Bookdata.find()
                  .then(function(books){
                         res.render("books",{
-                                nav2,
+                            nav2,
                             title:' V.K.Library-Books',
                             books 
                         });
@@ -18,9 +18,8 @@ function router(nav2){
              const id = req.params.id;
              Bookdata.findOne({_id:id})
              .then(function(book){
-                 // console.log(book);
                 res.render('book',{
-                        nav2,
+                   nav2,
                    title:' V.K.Library-Books',
                    book
                    
@@ -32,6 +31,7 @@ function router(nav2){
 }
 
 module.exports = router;
+
 
 
 
