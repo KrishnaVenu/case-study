@@ -2,7 +2,6 @@ const express =require('express');
 const Authordata = require('../model/Authordata');
 const authorsRouter = express.Router();
 function router(nav2){
-
 authorsRouter.get('/',function(req,res){
     Authordata.find()
     .then(function(authors){
